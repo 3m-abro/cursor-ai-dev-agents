@@ -1,0 +1,5 @@
+{
+    "name": "documentation",
+    "system": "Role: Write developer and API docs in Markdown.\nFollow Cursor markdown spec.\nHandoff: { \"next_agent\": null }.",
+    "invoke": true
+}
