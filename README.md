@@ -1,18 +1,18 @@
 # Cursor AI Development Agents
 
-**Enterprise-grade AI development workflow orchestration with 16 specialized agents for complete software development lifecycle management.**
+**Enterprise-grade AI development workflow orchestration with 17 specialized agents for complete software development lifecycle management.**
 
 ## 🚀 What This Is
 
-A comprehensive collection of 16 specialized AI agents that work together in Cursor IDE to build complete software projects from idea to deployment. Each agent has been optimized for maximum efficiency with 80% shorter prompts while maintaining full functionality. They coordinate through intelligent workflow automation to deliver production-ready applications with enterprise-grade quality assurance.
+A comprehensive collection of 17 specialized AI agents that work together in Cursor IDE to build complete software projects from idea to deployment. Each agent has been optimized for maximum efficiency with 80% shorter prompts while maintaining full functionality. They coordinate through intelligent workflow guidance to deliver production-ready applications with enterprise-grade quality assurance.
 
 ## 🎯 Key Features
 
-### **Intelligent Workflow Automation**
-- **Smart Orchestration**: Automatically determines optimal agent execution order
-- **Dependency Management**: Resolves agent dependencies and prerequisites
-- **Parallel Development**: Optimized for backend + frontend parallel development
-- **Template System**: 8 pre-configured workflows for common project types
+### **Intelligent Workflow Guidance**
+- **Sequential Orchestration**: Guides users through optimal agent execution order
+- **Project Folder Management**: Creates isolated project folders for each new project
+- **Sequential Development**: Backend → Frontend development workflow
+- **Template System**: Pre-configured workflows for common project types
 - **Error Recovery**: Intelligent error handling and recovery strategies
 - **Quality Gates**: Phase validation after each major milestone
 
@@ -34,7 +34,7 @@ A comprehensive collection of 16 specialized AI agents that work together in Cur
 ## 🤖 Available Agents
 
 ### **Core Workflow Agents**
-- **@orchestrator** - Master coordinator with intelligent automation
+- **@orchestrator** - Master coordinator with intelligent workflow guidance
 - **@workflow-monitor** - Real-time progress tracking and analytics
 - **@workflow-templates** - Pre-configured workflow templates and optimization
 - **@quality-gates** - Comprehensive quality validation and compliance
@@ -134,7 +134,20 @@ A comprehensive collection of 16 specialized AI agents that work together in Cur
 ### **Basic Usage**
 1. **Open Composer Chat** (Cmd/Ctrl + I)
 2. **Type**: `@orchestrator Build a social media app with React Native and Node.js`
-3. **Watch the intelligent workflow automation!**
+3. **Follow the sequential workflow guidance!**
+
+### **How It Works**
+1. **@orchestrator** creates a project folder (e.g., 'social-media-app')
+2. **Sequential Agent Calls**: You manually call each agent in order:
+   - `@prd-writer` → Creates `[project-folder]/docs/PRD.md`
+   - `@project-manager` → Creates `[project-folder]/docs/TASKS.json`
+   - `@researcher` → Creates `[project-folder]/docs/RESEARCH.md`
+   - `@architect` → Creates `[project-folder]/docs/ARCHITECTURE.md`
+   - `@backend-developer` → Creates `[project-folder]/src/backend/`
+   - `@frontend-developer` → Creates `[project-folder]/src/frontend/`
+   - And so on...
+3. **Project Isolation**: All files are created in the dedicated project folder
+4. **Quality Gates**: Validate each phase before proceeding
 
 ### **Advanced Usage**
 1. **Select Template**: `@workflow-templates Select template for e-commerce platform`
@@ -144,7 +157,8 @@ A comprehensive collection of 16 specialized AI agents that work together in Cur
 
 ### **Complete Workflow Example**
 ```
-Phase 1: Planning & Research
+Phase 0: Project Initialization
+├── Create project folder (e.g., 'todo-app', 'social-media-app')
 ├── @workflow-templates (optional)
 ├── @prd-writer
 ├── @project-manager
@@ -155,8 +169,9 @@ Phase 2: Architecture
 ├── @architect
 └── @quality-gates
 
-Phase 3: Development
-├── @backend-developer + @frontend-developer (parallel)
+Phase 3: Development (Sequential)
+├── @backend-developer → Implement in [project-folder]/src/backend/
+├── @frontend-developer → Implement in [project-folder]/src/frontend/
 ├── @workflow-monitor
 └── @quality-gates
 
@@ -179,6 +194,7 @@ Error Recovery: @error-recovery (when needed)
 
 ## 📁 Project Structure
 
+### **Orchestrator Repository**
 ```
 cursor-ai-dev-agents/
 ├── .cursor/
@@ -203,6 +219,26 @@ cursor-ai-dev-agents/
 │       └── documentation.json   # Documentation
 ├── README.md
 └── .gitignore
+```
+
+### **Project Folder Management**
+Each new project gets its own isolated folder:
+```
+[project-folder]/
+├── docs/                        # Project documentation
+│   ├── PRD.md                   # Product Requirements
+│   ├── TASKS.json               # Task breakdown
+│   ├── RESEARCH.md              # Technology research
+│   └── ARCHITECTURE.md          # System design
+├── src/                         # Source code
+│   ├── backend/                 # Backend implementation
+│   └── frontend/                # Frontend implementation
+├── tests/                       # Test suites
+├── reports/                     # Quality reports
+│   ├── QA.md                    # Test results
+│   ├── SECURITY.md              # Security audit
+│   └── QUALITY_GATES.md         # Quality validation
+└── deploy/                      # Deployment configs
 ```
 
 ## 🎯 Examples
@@ -234,9 +270,9 @@ cursor-ai-dev-agents/
 
 ## 🔧 Advanced Features
 
-### **Intelligent Workflow Automation**
-- Automatic agent dependency resolution
-- Parallel execution optimization (backend + frontend)
+### **Intelligent Workflow Guidance**
+- Sequential agent execution guidance
+- Project folder management and isolation
 - Smart template selection
 - Error recovery and retry logic
 - Progress tracking and monitoring
@@ -356,9 +392,9 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 ## 🎯 Recent Updates
 
 ### **Agent Optimization (Latest)**
-- **80% Shorter Prompts**: All 16 agents optimized for maximum efficiency
-- **Streamlined Workflow**: 6-phase development process with quality gates
-- **Parallel Development**: Backend + frontend development in parallel
+- **17 Specialized Agents**: Complete development lifecycle coverage
+- **Project Folder Management**: Isolated project folders for each new project
+- **Sequential Development**: Backend → Frontend development workflow
 - **Enhanced Error Recovery**: Intelligent error handling and retry mechanisms
 - **Real-time Monitoring**: Live progress tracking and performance analytics
 - **Comprehensive Analytics**: Post-completion analysis and optimization insights
