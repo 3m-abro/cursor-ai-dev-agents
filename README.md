@@ -1,10 +1,10 @@
 # Cursor AI Development Agents
 
-**Enterprise-grade AI development workflow orchestration with 22 specialized agents for complete software development lifecycle management, supporting both new and existing projects.**
+**Enterprise-grade AI development workflow orchestration with 23 specialized agents for complete software development lifecycle management, supporting both new and existing projects.**
 
 ## 🚀 What This Is
 
-A comprehensive collection of 22 specialized AI agents that work together in Cursor IDE to build complete software projects from idea to deployment, and enhance existing projects with targeted improvements. Each agent has been optimized for maximum efficiency with 80% shorter prompts while maintaining full functionality. They coordinate through intelligent workflow guidance to deliver production-ready applications with enterprise-grade quality assurance.
+A comprehensive collection of 23 specialized AI agents that work together in Cursor IDE to build complete software projects from idea to deployment, and enhance existing projects with targeted improvements. Each agent has been optimized for maximum efficiency with 80% shorter prompts while maintaining full functionality. They coordinate through intelligent workflow guidance to deliver production-ready applications with enterprise-grade quality assurance.
 
 ## 🎯 Key Features
 
@@ -16,6 +16,7 @@ A comprehensive collection of 22 specialized AI agents that work together in Cur
 - **Error Recovery**: Intelligent error handling and recovery strategies
 - **Quality Gates**: Phase validation after each major milestone
 - **Smart Agent Detection**: Automatically determines which agents are needed based on project requirements
+- **PRD Import Support**: Import and analyze existing PRDs in multiple formats (Word, PDF, Google Docs, etc.)
 - **Existing Project Support**: Enhanced agents that work with existing codebases and provide incremental improvements
 
 ### **Enterprise-Grade Quality Assurance**
@@ -43,8 +44,9 @@ A comprehensive collection of 22 specialized AI agents that work together in Cur
 - **@workflow-analytics** - Advanced analytics and reporting
 - **@error-recovery** - Intelligent error handling and recovery
 
-### **Development Lifecycle Agents (11)**
+### **Development Lifecycle Agents (12)**
 - **@prd-writer** - Product Requirements Document creation
+- **@prd-importer** - Import and analyze existing PRDs in multiple formats
 - **@project-manager** - Task breakdown and resource allocation
 - **@researcher** - Technology research and best practices
 - **@architect** - System architecture and technical design
@@ -149,6 +151,12 @@ A comprehensive collection of 22 specialized AI agents that work together in Cur
 2. **Type**: `@orchestrator Build a social media app with React Native and Node.js`
 3. **Follow the sequential workflow guidance!**
 
+#### **For Projects with Existing PRD:**
+1. **Open Composer Chat** (Cmd/Ctrl + I)
+2. **Type**: `@orchestrator I have a PRD in Word format for my e-commerce app, start development`
+3. **System automatically**: Imports PRD → Skips PRD creation → Jumps to project planning
+4. **Follow the streamlined workflow!**
+
 #### **For Existing Projects:**
 1. **Open Composer Chat** (Cmd/Ctrl + I)
 2. **Analyze your project**: `@project-analyzer Analyze my existing e-commerce site`
@@ -175,6 +183,8 @@ A comprehensive collection of 22 specialized AI agents that work together in Cur
 4. **Analytics**: `@workflow-analytics Generate performance report`
 
 ### **Complete Workflow Example**
+
+#### **New Project Workflow:**
 ```
 Phase 0: Project Initialization
 ├── Create project folder (e.g., 'todo-app', 'social-media-app')
@@ -183,6 +193,18 @@ Phase 0: Project Initialization
 ├── @project-manager
 ├── @researcher
 └── @quality-gates
+```
+
+#### **PRD-First Project Workflow:**
+```
+Phase 0: Project Initialization
+├── Create project folder (e.g., 'ecommerce-platform')
+├── @workflow-templates (optional)
+├── @prd-importer (if PRD exists)
+├── @project-manager
+├── @researcher
+└── @quality-gates
+```
 
 Phase 2: Architecture
 ├── @architect
@@ -209,6 +231,61 @@ Phase 6: Analysis & Completion
 └── @workflow-analytics
 
 Error Recovery: @error-recovery (when needed)
+```
+
+## 📄 PRD Import Support
+
+### **Import Existing PRDs**
+The system now supports importing and analyzing existing PRDs in multiple formats:
+
+#### **@prd-importer**
+- **Multi-Format Support**: Word, PDF, Markdown, Google Docs, Notion, Confluence, JSON, YAML
+- **Quality Assessment**: PRD completeness scoring and gap analysis
+- **Format Conversion**: Convert to standardized Markdown format
+- **Smart Detection**: Orchestrator automatically detects existing PRDs
+- **Workflow Optimization**: Skip PRD creation and jump to project planning
+
+#### **Supported PRD Formats**
+- **Word Documents** (.docx) - Extract text and structure
+- **PDF Files** (.pdf) - Parse content and convert to Markdown
+- **Google Docs** (links) - Access and analyze shared documents
+- **Notion Pages** (URLs) - Import from Notion workspaces
+- **Confluence** (links) - Extract from Confluence pages
+- **Markdown** (.md) - Validate and enhance existing docs
+- **Plain Text** (.txt) - Structure and format requirements
+- **JSON/YAML** - Parse structured requirement files
+
+#### **PRD Analysis Capabilities**
+- **Content Extraction**: Project overview, features, requirements, metrics
+- **Quality Scoring**: Completeness, clarity, technical feasibility assessment
+- **Gap Identification**: Missing sections and improvement recommendations
+- **Format Standardization**: Convert to consistent Markdown format
+- **Workflow Integration**: Seamless integration with development workflow
+
+### **Usage Scenarios**
+
+#### **Scenario 1: PRD File Import**
+```
+@orchestrator "I have a PRD in Word format for my e-commerce app, start development"
+→ @prd-importer analyzes and converts PRD
+→ @project-manager creates task breakdown
+→ Continue with normal workflow
+```
+
+#### **Scenario 2: PRD Link Import**
+```
+@orchestrator "Here's my Google Docs PRD: [link], analyze and start development"
+→ @prd-importer accesses and analyzes PRD
+→ Quality assessment and recommendations
+→ Jump to project planning
+```
+
+#### **Scenario 3: PRD Validation**
+```
+@prd-importer "Is my existing PRD complete enough for development?"
+→ Comprehensive PRD analysis
+→ Quality scoring and gap identification
+→ Improvement recommendations
 ```
 
 ## 🔄 Existing Project Support
@@ -277,7 +354,7 @@ The system now includes powerful tools for working with existing projects:
 ```
 cursor-ai-dev-agents/
 ├── .cursor/
-│   ├── agents.json              # Main agent registry (22 agents)
+│   ├── agents.json              # Main agent registry (23 agents)
 │   └── agents/                  # Individual agent configurations
 │       ├── orchestrator.json    # Master coordinator
 │       ├── workflow-monitor.json # Progress tracking
@@ -286,6 +363,7 @@ cursor-ai-dev-agents/
 │       ├── workflow-analytics.json # Analytics & reporting
 │       ├── error-recovery.json  # Error handling
 │       ├── prd-writer.json      # PRD creation
+│       ├── prd-importer.json    # PRD import & analysis
 │       ├── project-manager.json # Task management
 │       ├── researcher.json      # Technology research
 │       ├── architect.json       # System design
