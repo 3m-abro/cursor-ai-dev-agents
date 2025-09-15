@@ -1,10 +1,10 @@
 # Cursor AI Development Agents
 
-**Enterprise-grade AI development workflow orchestration with 31 specialized agents for complete software development lifecycle management, supporting new projects, existing projects, PRD-first scenarios, comprehensive environment setup, advanced real-world scenarios, and full Git integration.**
+**Enterprise-grade AI development workflow orchestration with 35 specialized agents for complete software development lifecycle management, supporting new projects, existing projects, PRD-first scenarios, comprehensive environment setup, advanced real-world scenarios, full Git integration, conflict resolution, secrets management, and rollback capabilities.**
 
 ## 🚀 What This Is
 
-A comprehensive collection of 31 specialized AI agents that work together in Cursor IDE to build complete software projects from idea to deployment, and enhance existing projects with targeted improvements. Each agent has been optimized for maximum efficiency with 80% shorter prompts while maintaining full functionality. They coordinate through intelligent workflow guidance to deliver production-ready applications with enterprise-grade quality assurance and complete Git integration.
+A comprehensive collection of 35 specialized AI agents that work together in Cursor IDE to build complete software projects from idea to deployment, and enhance existing projects with targeted improvements. Each agent has been optimized for maximum efficiency with 80% shorter prompts while maintaining full functionality. They coordinate through intelligent workflow guidance to deliver production-ready applications with enterprise-grade quality assurance, complete Git integration, conflict resolution, secrets management, and rollback capabilities.
 
 ## 🎯 Key Features
 
@@ -21,6 +21,10 @@ A comprehensive collection of 31 specialized AI agents that work together in Cur
 - **Real-Time Web Research**: @researcher agent uses web search to find latest open source solutions and current best practices
 - **Git Integration**: Complete version control with @git-operations agent for repository management, cloning, and committing
 - **Open Source Analysis**: Clone and analyze reference repositories for best practices and patterns
+- **Conflict Resolution**: Automatic conflict detection and resolution with @conflict-resolver agent
+- **Secrets Management**: Secure credential and API key management with @secrets-manager agent
+- **Rollback Capabilities**: Undo problematic changes and restore previous states with @rollback agent
+- **Real-time Monitoring**: Live progress visualization and performance tracking with enhanced @workflow-monitor
 - **Existing Project Support**: Enhanced agents that work with existing codebases and provide incremental improvements
 
 ### **Enterprise-Grade Quality Assurance**
@@ -48,7 +52,7 @@ A comprehensive collection of 31 specialized AI agents that work together in Cur
 - **@workflow-analytics** - Advanced analytics and reporting
 - **@error-recovery** - Intelligent error handling and recovery
 
-### **Development Lifecycle Agents (20)**
+### **Development Lifecycle Agents (24)**
 - **@prd-writer** - Product Requirements Document creation
 - **@prd-importer** - Import and analyze existing PRDs in multiple formats
 - **@project-manager** - Task breakdown and resource allocation
@@ -69,6 +73,9 @@ A comprehensive collection of 31 specialized AI agents that work together in Cur
 - **@accessibility-specialist** - Ensure WCAG compliance and inclusive design
 - **@ai-ml-specialist** - Design and implement AI/ML solutions and intelligent features
 - **@git-operations** - Complete Git repository management, cloning, and version control
+- **@conflict-resolver** - Automatic conflict detection and resolution between agents
+- **@secrets-manager** - Secure credential and API key management with encryption
+- **@rollback** - Undo problematic changes and restore previous states
 
 ### **Content & Legal Agents (2)**
 - **@copywriter** - SEO-optimized content creation and marketing copy
@@ -595,6 +602,39 @@ The system now includes powerful tools for working with existing projects:
 → Configure CI/CD integration with GitHub Actions
 ```
 
+#### **Scenario 12: Conflict Resolution**
+```
+@conflict-resolver "Resolve conflicts between backend and frontend agents"
+→ Analyze conflict types and affected files
+→ Apply intelligent merge strategies
+→ Resolve code integration conflicts
+→ Update workflow status and notify agents
+→ Commit resolved changes with proper messages
+→ Implement conflict prevention measures
+```
+
+#### **Scenario 13: Secrets Management**
+```
+@secrets-manager "Set up secure credentials for my e-commerce app"
+→ Configure encrypted storage for API keys and credentials
+→ Set up environment variables and configuration files
+→ Implement access control and audit logging
+→ Configure secret rotation policies
+→ Set up compliance monitoring and vulnerability scanning
+→ Integrate with cloud secret management services
+```
+
+#### **Scenario 14: Rollback Operations**
+```
+@rollback "Undo problematic backend changes that broke authentication"
+→ Analyze rollback requirements and impact
+→ Create backup of current state
+→ Execute Git rollback to stable commit
+→ Verify rollback success and test functionality
+→ Update workflow status and notify affected agents
+→ Implement prevention measures for future issues
+```
+
 ### **Key Benefits for Existing Projects**
 - **Incremental Improvements**: Enhance existing projects without disruption
 - **Preservation**: Keep existing good content and code
@@ -610,7 +650,7 @@ The system now includes powerful tools for working with existing projects:
 ```
 cursor-ai-dev-agents/
 ├── .cursor/
-│   ├── agents.json              # Main agent registry (31 agents)
+│   ├── agents.json              # Main agent registry (35 agents)
 │   └── agents/                  # Individual agent configurations
 │       ├── orchestrator.json    # Master coordinator
 │       ├── workflow-monitor.json # Progress tracking
@@ -642,7 +682,10 @@ cursor-ai-dev-agents/
 │       ├── enterprise-integration.json # Enterprise integration
 │       ├── accessibility-specialist.json # Accessibility compliance
 │       ├── ai-ml-specialist.json       # AI/ML solutions
-│       └── git-operations.json         # Git repository management
+│       ├── git-operations.json         # Git repository management
+│       ├── conflict-resolver.json      # Conflict resolution
+│       ├── secrets-manager.json        # Secrets management
+│       └── rollback.json               # Rollback operations
 ├── README.md
 └── .gitignore
 ```
@@ -826,7 +869,7 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 ## 🎯 Recent Updates
 
 ### **Advanced Real-World Scenarios (Latest)**
-- **31 Specialized Agents**: Complete development lifecycle coverage with advanced scenarios and Git integration
+- **35 Specialized Agents**: Complete development lifecycle coverage with advanced scenarios, Git integration, conflict resolution, secrets management, and rollback capabilities
 - **Microservices Architecture**: @microservices-architect for distributed systems
 - **Real-Time Applications**: @realtime-developer for WebSocket and WebRTC
 - **DevOps Engineering**: @devops-engineer for CI/CD and infrastructure automation
@@ -834,6 +877,10 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 - **Accessibility Compliance**: @accessibility-specialist for WCAG compliance
 - **AI/ML Integration**: @ai-ml-specialist for machine learning and intelligent features
 - **Git Integration**: @git-operations for complete repository management and version control
+- **Conflict Resolution**: @conflict-resolver for automatic conflict detection and resolution
+- **Secrets Management**: @secrets-manager for secure credential and API key management
+- **Rollback Capabilities**: @rollback for undoing problematic changes and restoring states
+- **Enhanced Monitoring**: Real-time progress visualization and performance tracking
 - **Project Folder Management**: Isolated project folders for each new project
 - **Sequential Development**: Backend → Frontend development workflow
 - **Enhanced Error Recovery**: Intelligent error handling and retry mechanisms
