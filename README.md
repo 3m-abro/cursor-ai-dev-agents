@@ -1,10 +1,10 @@
 # Cursor AI Development Agents
 
-**Enterprise-grade AI development workflow orchestration with 24 specialized agents for complete software development lifecycle management, supporting new projects, existing projects, PRD-first scenarios, and comprehensive environment setup.**
+**Enterprise-grade AI development workflow orchestration with 29 specialized agents for complete software development lifecycle management, supporting new projects, existing projects, PRD-first scenarios, comprehensive environment setup, and advanced real-world scenarios.**
 
 ## 🚀 What This Is
 
-A comprehensive collection of 24 specialized AI agents that work together in Cursor IDE to build complete software projects from idea to deployment, and enhance existing projects with targeted improvements. Each agent has been optimized for maximum efficiency with 80% shorter prompts while maintaining full functionality. They coordinate through intelligent workflow guidance to deliver production-ready applications with enterprise-grade quality assurance.
+A comprehensive collection of 29 specialized AI agents that work together in Cursor IDE to build complete software projects from idea to deployment, and enhance existing projects with targeted improvements. Each agent has been optimized for maximum efficiency with 80% shorter prompts while maintaining full functionality. They coordinate through intelligent workflow guidance to deliver production-ready applications with enterprise-grade quality assurance.
 
 ## 🎯 Key Features
 
@@ -45,7 +45,7 @@ A comprehensive collection of 24 specialized AI agents that work together in Cur
 - **@workflow-analytics** - Advanced analytics and reporting
 - **@error-recovery** - Intelligent error handling and recovery
 
-### **Development Lifecycle Agents (13)**
+### **Development Lifecycle Agents (18)**
 - **@prd-writer** - Product Requirements Document creation
 - **@prd-importer** - Import and analyze existing PRDs in multiple formats
 - **@project-manager** - Task breakdown and resource allocation
@@ -59,6 +59,11 @@ A comprehensive collection of 24 specialized AI agents that work together in Cur
 - **@qa-test** - Comprehensive testing suite creation
 - **@devops** - Infrastructure and deployment configuration
 - **@documentation** - Technical and user documentation
+- **@microservices-architect** - Design and implement microservices architectures
+- **@realtime-developer** - Build real-time applications with WebSocket and WebRTC
+- **@devops-engineer** - Implement CI/CD pipelines and infrastructure automation
+- **@enterprise-integration** - Integrate legacy systems and enterprise requirements
+- **@accessibility-specialist** - Ensure WCAG compliance and inclusive design
 
 ### **Content & Legal Agents (2)**
 - **@copywriter** - SEO-optimized content creation and marketing copy
@@ -508,6 +513,61 @@ The system now includes powerful tools for working with existing projects:
 → Incremental improvements
 ```
 
+#### **Scenario 5: Microservices Architecture**
+```
+@microservices-architect "Design microservices for e-commerce platform"
+→ Analyze domain boundaries
+→ Design service communication patterns
+→ Configure API gateway and load balancing
+→ Set up message queues and event-driven architecture
+→ Implement distributed tracing and monitoring
+→ Create Kubernetes deployment configurations
+```
+
+#### **Scenario 6: Real-Time Applications**
+```
+@realtime-developer "Build live chat application with video calling"
+→ Design WebSocket architecture
+→ Implement WebRTC peer-to-peer communication
+→ Set up real-time database integration
+→ Configure scalable message handling
+→ Add live collaboration features
+→ Implement real-time notifications
+```
+
+#### **Scenario 7: Enterprise Integration**
+```
+@enterprise-integration "Integrate SAP with our custom applications"
+→ Analyze legacy system requirements
+→ Design ESB integration patterns
+→ Implement SSO with Active Directory
+→ Configure API gateway and security
+→ Set up data migration strategies
+→ Ensure SOX and HIPAA compliance
+```
+
+#### **Scenario 8: Accessibility Compliance**
+```
+@accessibility-specialist "Make our website WCAG 2.1 AA compliant"
+→ Audit current accessibility status
+→ Implement ARIA landmarks and widgets
+→ Optimize for screen readers
+→ Add keyboard navigation support
+→ Test with assistive technologies
+→ Generate compliance report
+```
+
+#### **Scenario 9: DevOps Pipeline**
+```
+@devops-engineer "Set up CI/CD pipeline for Kubernetes deployment"
+→ Design GitHub Actions workflow
+→ Configure Terraform infrastructure
+→ Set up container orchestration
+→ Implement monitoring and logging
+→ Configure blue-green deployment
+→ Add security scanning automation
+```
+
 ### **Key Benefits for Existing Projects**
 - **Incremental Improvements**: Enhance existing projects without disruption
 - **Preservation**: Keep existing good content and code
@@ -523,7 +583,7 @@ The system now includes powerful tools for working with existing projects:
 ```
 cursor-ai-dev-agents/
 ├── .cursor/
-│   ├── agents.json              # Main agent registry (24 agents)
+│   ├── agents.json              # Main agent registry (29 agents)
 │   └── agents/                  # Individual agent configurations
 │       ├── orchestrator.json    # Master coordinator
 │       ├── workflow-monitor.json # Progress tracking
@@ -548,7 +608,12 @@ cursor-ai-dev-agents/
 │       ├── legal.json           # Legal compliance
 │       ├── project-analyzer.json # Project assessment
 │       ├── copywriter-standalone.json # Content optimization
-│       └── legal-standalone.json # Legal enhancement
+│       ├── legal-standalone.json # Legal enhancement
+│       ├── microservices-architect.json # Microservices architecture
+│       ├── realtime-developer.json    # Real-time applications
+│       ├── devops-engineer.json       # DevOps & CI/CD
+│       ├── enterprise-integration.json # Enterprise integration
+│       └── accessibility-specialist.json # Accessibility compliance
 ├── README.md
 └── .gitignore
 ```
@@ -731,8 +796,13 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 
 ## 🎯 Recent Updates
 
-### **Agent Optimization (Latest)**
-- **17 Specialized Agents**: Complete development lifecycle coverage
+### **Advanced Real-World Scenarios (Latest)**
+- **29 Specialized Agents**: Complete development lifecycle coverage with advanced scenarios
+- **Microservices Architecture**: @microservices-architect for distributed systems
+- **Real-Time Applications**: @realtime-developer for WebSocket and WebRTC
+- **DevOps Engineering**: @devops-engineer for CI/CD and infrastructure automation
+- **Enterprise Integration**: @enterprise-integration for legacy systems and compliance
+- **Accessibility Compliance**: @accessibility-specialist for WCAG compliance
 - **Project Folder Management**: Isolated project folders for each new project
 - **Sequential Development**: Backend → Frontend development workflow
 - **Enhanced Error Recovery**: Intelligent error handling and retry mechanisms
