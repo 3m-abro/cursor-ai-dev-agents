@@ -1,10 +1,10 @@
 # Cursor AI Development Agents
 
-**Enterprise-grade AI development workflow orchestration with 29 specialized agents for complete software development lifecycle management, supporting new projects, existing projects, PRD-first scenarios, comprehensive environment setup, and advanced real-world scenarios.**
+**Enterprise-grade AI development workflow orchestration with 31 specialized agents for complete software development lifecycle management, supporting new projects, existing projects, PRD-first scenarios, comprehensive environment setup, advanced real-world scenarios, and full Git integration.**
 
 ## 🚀 What This Is
 
-A comprehensive collection of 29 specialized AI agents that work together in Cursor IDE to build complete software projects from idea to deployment, and enhance existing projects with targeted improvements. Each agent has been optimized for maximum efficiency with 80% shorter prompts while maintaining full functionality. They coordinate through intelligent workflow guidance to deliver production-ready applications with enterprise-grade quality assurance.
+A comprehensive collection of 31 specialized AI agents that work together in Cursor IDE to build complete software projects from idea to deployment, and enhance existing projects with targeted improvements. Each agent has been optimized for maximum efficiency with 80% shorter prompts while maintaining full functionality. They coordinate through intelligent workflow guidance to deliver production-ready applications with enterprise-grade quality assurance and complete Git integration.
 
 ## 🎯 Key Features
 
@@ -18,6 +18,9 @@ A comprehensive collection of 29 specialized AI agents that work together in Cur
 - **Smart Agent Detection**: Automatically determines which agents are needed based on project requirements
 - **PRD Import Support**: Import and analyze existing PRDs in multiple formats (Word, PDF, Google Docs, etc.)
 - **Environment Setup Validation**: Comprehensive development environment setup and validation for all project types
+- **Real-Time Web Research**: @researcher agent uses web search to find latest open source solutions and current best practices
+- **Git Integration**: Complete version control with @git-operations agent for repository management, cloning, and committing
+- **Open Source Analysis**: Clone and analyze reference repositories for best practices and patterns
 - **Existing Project Support**: Enhanced agents that work with existing codebases and provide incremental improvements
 
 ### **Enterprise-Grade Quality Assurance**
@@ -45,11 +48,11 @@ A comprehensive collection of 29 specialized AI agents that work together in Cur
 - **@workflow-analytics** - Advanced analytics and reporting
 - **@error-recovery** - Intelligent error handling and recovery
 
-### **Development Lifecycle Agents (18)**
+### **Development Lifecycle Agents (20)**
 - **@prd-writer** - Product Requirements Document creation
 - **@prd-importer** - Import and analyze existing PRDs in multiple formats
 - **@project-manager** - Task breakdown and resource allocation
-- **@researcher** - Technology research and best practices
+- **@researcher** - Technology research with real-time web search for latest open source solutions
 - **@architect** - System architecture and technical design
 - **@environment-setup** - Development environment validation and configuration
 - **@backend-developer** - Server-side implementation with framework patterns
@@ -64,6 +67,8 @@ A comprehensive collection of 29 specialized AI agents that work together in Cur
 - **@devops-engineer** - Implement CI/CD pipelines and infrastructure automation
 - **@enterprise-integration** - Integrate legacy systems and enterprise requirements
 - **@accessibility-specialist** - Ensure WCAG compliance and inclusive design
+- **@ai-ml-specialist** - Design and implement AI/ML solutions and intelligent features
+- **@git-operations** - Complete Git repository management, cloning, and version control
 
 ### **Content & Legal Agents (2)**
 - **@copywriter** - SEO-optimized content creation and marketing copy
@@ -568,6 +573,28 @@ The system now includes powerful tools for working with existing projects:
 → Add security scanning automation
 ```
 
+#### **Scenario 10: AI/ML Integration**
+```
+@ai-ml-specialist "Build recommendation engine for my e-commerce site"
+→ Analyze data requirements and sources
+→ Design machine learning pipeline
+→ Select and train recommendation models
+→ Implement model serving API
+→ Set up monitoring and retraining
+→ Integrate with existing application
+```
+
+#### **Scenario 11: Git Repository Management**
+```
+@git-operations "Set up repository for my React Native app with reference projects"
+→ Initialize Git repository with proper configuration
+→ Clone reference React Native projects for analysis
+→ Set up branching strategy and collaboration workflow
+→ Configure .gitignore and repository structure
+→ Set up remote repository and push initial commit
+→ Configure CI/CD integration with GitHub Actions
+```
+
 ### **Key Benefits for Existing Projects**
 - **Incremental Improvements**: Enhance existing projects without disruption
 - **Preservation**: Keep existing good content and code
@@ -583,7 +610,7 @@ The system now includes powerful tools for working with existing projects:
 ```
 cursor-ai-dev-agents/
 ├── .cursor/
-│   ├── agents.json              # Main agent registry (29 agents)
+│   ├── agents.json              # Main agent registry (31 agents)
 │   └── agents/                  # Individual agent configurations
 │       ├── orchestrator.json    # Master coordinator
 │       ├── workflow-monitor.json # Progress tracking
@@ -613,7 +640,9 @@ cursor-ai-dev-agents/
 │       ├── realtime-developer.json    # Real-time applications
 │       ├── devops-engineer.json       # DevOps & CI/CD
 │       ├── enterprise-integration.json # Enterprise integration
-│       └── accessibility-specialist.json # Accessibility compliance
+│       ├── accessibility-specialist.json # Accessibility compliance
+│       ├── ai-ml-specialist.json       # AI/ML solutions
+│       └── git-operations.json         # Git repository management
 ├── README.md
 └── .gitignore
 ```
@@ -797,12 +826,14 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 ## 🎯 Recent Updates
 
 ### **Advanced Real-World Scenarios (Latest)**
-- **29 Specialized Agents**: Complete development lifecycle coverage with advanced scenarios
+- **31 Specialized Agents**: Complete development lifecycle coverage with advanced scenarios and Git integration
 - **Microservices Architecture**: @microservices-architect for distributed systems
 - **Real-Time Applications**: @realtime-developer for WebSocket and WebRTC
 - **DevOps Engineering**: @devops-engineer for CI/CD and infrastructure automation
 - **Enterprise Integration**: @enterprise-integration for legacy systems and compliance
 - **Accessibility Compliance**: @accessibility-specialist for WCAG compliance
+- **AI/ML Integration**: @ai-ml-specialist for machine learning and intelligent features
+- **Git Integration**: @git-operations for complete repository management and version control
 - **Project Folder Management**: Isolated project folders for each new project
 - **Sequential Development**: Backend → Frontend development workflow
 - **Enhanced Error Recovery**: Intelligent error handling and retry mechanisms
