@@ -269,7 +269,6 @@ Phase 2: Development
 ├── Configure environment variables
 ├── Test development environment
 └── Create setup scripts for team
-```
 
 Phase 2: Architecture
 ├── @architect
