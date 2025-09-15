@@ -1,10 +1,10 @@
 # Cursor AI Development Agents
 
-**Enterprise-grade AI development workflow orchestration with 35 specialized agents for complete software development lifecycle management, supporting new projects, existing projects, PRD-first scenarios, comprehensive environment setup, advanced real-world scenarios, full Git integration, conflict resolution, secrets management, and rollback capabilities.**
+**Enterprise-grade AI development workflow orchestration with 43 specialized agents for complete software development lifecycle management, supporting new projects, existing projects, PRD-first scenarios, comprehensive environment setup, advanced real-world scenarios, full Git integration, conflict resolution, secrets management, rollback capabilities, performance optimization, security hardening, database migration, API documentation, monitoring setup, internationalization, testing strategies, and code review.**
 
 ## 🚀 What This Is
 
-A comprehensive collection of 35 specialized AI agents that work together in Cursor IDE to build complete software projects from idea to deployment, and enhance existing projects with targeted improvements. Each agent has been optimized for maximum efficiency with 80% shorter prompts while maintaining full functionality. They coordinate through intelligent workflow guidance to deliver production-ready applications with enterprise-grade quality assurance, complete Git integration, conflict resolution, secrets management, and rollback capabilities.
+A comprehensive collection of 43 specialized AI agents that work together in Cursor IDE to build complete software projects from idea to deployment, and enhance existing projects with targeted improvements. Each agent has been optimized for maximum efficiency with 80% shorter prompts while maintaining full functionality. They coordinate through intelligent workflow guidance to deliver production-ready applications with enterprise-grade quality assurance, complete Git integration, conflict resolution, secrets management, rollback capabilities, performance optimization, security hardening, database migration, API documentation, monitoring setup, internationalization, testing strategies, and code review.
 
 ## 🎯 Key Features
 
@@ -52,7 +52,7 @@ A comprehensive collection of 35 specialized AI agents that work together in Cur
 - **@workflow-analytics** - Advanced analytics and reporting
 - **@error-recovery** - Intelligent error handling and recovery
 
-### **Development Lifecycle Agents (24)**
+### **Development Lifecycle Agents (32)**
 - **@prd-writer** - Product Requirements Document creation
 - **@prd-importer** - Import and analyze existing PRDs in multiple formats
 - **@project-manager** - Task breakdown and resource allocation
@@ -76,6 +76,14 @@ A comprehensive collection of 35 specialized AI agents that work together in Cur
 - **@conflict-resolver** - Automatic conflict detection and resolution between agents
 - **@secrets-manager** - Secure credential and API key management with encryption
 - **@rollback** - Undo problematic changes and restore previous states
+- **@performance-optimizer** - Code and system performance optimization
+- **@security-hardener** - Advanced security hardening and compliance
+- **@database-migrator** - Database migration and schema management
+- **@api-documentation** - API documentation and testing frameworks
+- **@monitoring-setup** - Production monitoring and observability
+- **@i18n-specialist** - Internationalization and localization
+- **@testing-strategist** - Comprehensive testing strategies and automation
+- **@code-reviewer** - Automated code review and quality assurance
 
 ### **Content & Legal Agents (2)**
 - **@copywriter** - SEO-optimized content creation and marketing copy
@@ -650,7 +658,7 @@ The system now includes powerful tools for working with existing projects:
 ```
 cursor-ai-dev-agents/
 ├── .cursor/
-│   ├── agents.json              # Main agent registry (35 agents)
+│   ├── agents.json              # Main agent registry (43 agents)
 │   └── agents/                  # Individual agent configurations
 │       ├── orchestrator.json    # Master coordinator
 │       ├── workflow-monitor.json # Progress tracking
@@ -686,6 +694,14 @@ cursor-ai-dev-agents/
 │       ├── conflict-resolver.json      # Conflict resolution
 │       ├── secrets-manager.json        # Secrets management
 │       └── rollback.json               # Rollback operations
+│       ├── performance-optimizer.json  # Performance optimization
+│       ├── security-hardener.json      # Security hardening
+│       ├── database-migrator.json      # Database migration
+│       ├── api-documentation.json      # API documentation
+│       ├── monitoring-setup.json       # Monitoring setup
+│       ├── i18n-specialist.json        # Internationalization
+│       ├── testing-strategist.json     # Testing strategies
+│       └── code-reviewer.json          # Code review
 ├── README.md
 └── .gitignore
 ```
@@ -869,7 +885,7 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 ## 🎯 Recent Updates
 
 ### **Advanced Real-World Scenarios (Latest)**
-- **35 Specialized Agents**: Complete development lifecycle coverage with advanced scenarios, Git integration, conflict resolution, secrets management, and rollback capabilities
+- **43 Specialized Agents**: Complete development lifecycle coverage with advanced scenarios, Git integration, conflict resolution, secrets management, rollback capabilities, performance optimization, security hardening, database migration, API documentation, monitoring setup, internationalization, testing strategies, and code review
 - **Microservices Architecture**: @microservices-architect for distributed systems
 - **Real-Time Applications**: @realtime-developer for WebSocket and WebRTC
 - **DevOps Engineering**: @devops-engineer for CI/CD and infrastructure automation
@@ -881,6 +897,14 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 - **Secrets Management**: @secrets-manager for secure credential and API key management
 - **Rollback Capabilities**: @rollback for undoing problematic changes and restoring states
 - **Enhanced Monitoring**: Real-time progress visualization and performance tracking
+- **Performance Optimization**: @performance-optimizer for code and system optimization
+- **Security Hardening**: @security-hardener for advanced security and compliance
+- **Database Migration**: @database-migrator for schema and data migration management
+- **API Documentation**: @api-documentation for comprehensive API docs and testing
+- **Production Monitoring**: @monitoring-setup for observability and alerting
+- **Internationalization**: @i18n-specialist for global application support
+- **Testing Strategies**: @testing-strategist for comprehensive test automation
+- **Code Review**: @code-reviewer for automated quality assurance
 - **Project Folder Management**: Isolated project folders for each new project
 - **Sequential Development**: Backend → Frontend development workflow
 - **Enhanced Error Recovery**: Intelligent error handling and retry mechanisms
