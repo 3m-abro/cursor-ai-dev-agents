@@ -1,10 +1,10 @@
 # Cursor AI Development Agents
 
-**Enterprise-grade AI development workflow orchestration with 23 specialized agents for complete software development lifecycle management, supporting both new and existing projects.**
+**Enterprise-grade AI development workflow orchestration with 24 specialized agents for complete software development lifecycle management, supporting new projects, existing projects, PRD-first scenarios, and comprehensive environment setup.**
 
 ## 🚀 What This Is
 
-A comprehensive collection of 23 specialized AI agents that work together in Cursor IDE to build complete software projects from idea to deployment, and enhance existing projects with targeted improvements. Each agent has been optimized for maximum efficiency with 80% shorter prompts while maintaining full functionality. They coordinate through intelligent workflow guidance to deliver production-ready applications with enterprise-grade quality assurance.
+A comprehensive collection of 24 specialized AI agents that work together in Cursor IDE to build complete software projects from idea to deployment, and enhance existing projects with targeted improvements. Each agent has been optimized for maximum efficiency with 80% shorter prompts while maintaining full functionality. They coordinate through intelligent workflow guidance to deliver production-ready applications with enterprise-grade quality assurance.
 
 ## 🎯 Key Features
 
@@ -17,6 +17,7 @@ A comprehensive collection of 23 specialized AI agents that work together in Cur
 - **Quality Gates**: Phase validation after each major milestone
 - **Smart Agent Detection**: Automatically determines which agents are needed based on project requirements
 - **PRD Import Support**: Import and analyze existing PRDs in multiple formats (Word, PDF, Google Docs, etc.)
+- **Environment Setup Validation**: Comprehensive development environment setup and validation for all project types
 - **Existing Project Support**: Enhanced agents that work with existing codebases and provide incremental improvements
 
 ### **Enterprise-Grade Quality Assurance**
@@ -44,12 +45,13 @@ A comprehensive collection of 23 specialized AI agents that work together in Cur
 - **@workflow-analytics** - Advanced analytics and reporting
 - **@error-recovery** - Intelligent error handling and recovery
 
-### **Development Lifecycle Agents (12)**
+### **Development Lifecycle Agents (13)**
 - **@prd-writer** - Product Requirements Document creation
 - **@prd-importer** - Import and analyze existing PRDs in multiple formats
 - **@project-manager** - Task breakdown and resource allocation
 - **@researcher** - Technology research and best practices
 - **@architect** - System architecture and technical design
+- **@environment-setup** - Development environment validation and configuration
 - **@backend-developer** - Server-side implementation with framework patterns
 - **@frontend-developer** - UI implementation with framework patterns
 - **@code-refactorer** - Code optimization and refactoring
@@ -149,13 +151,20 @@ A comprehensive collection of 23 specialized AI agents that work together in Cur
 #### **For New Projects:**
 1. **Open Composer Chat** (Cmd/Ctrl + I)
 2. **Type**: `@orchestrator Build a social media app with React Native and Node.js`
-3. **Follow the sequential workflow guidance!**
+3. **System automatically**: Sets up environment → Creates PRD → Plans project → Develops app
+4. **Follow the sequential workflow guidance!**
 
 #### **For Projects with Existing PRD:**
 1. **Open Composer Chat** (Cmd/Ctrl + I)
 2. **Type**: `@orchestrator I have a PRD in Word format for my e-commerce app, start development`
-3. **System automatically**: Imports PRD → Skips PRD creation → Jumps to project planning
+3. **System automatically**: Imports PRD → Sets up environment → Jumps to project planning
 4. **Follow the streamlined workflow!**
+
+#### **For Environment Setup Issues:**
+1. **Open Composer Chat** (Cmd/Ctrl + I)
+2. **Type**: `@environment-setup Set up environment for React Native development`
+3. **System automatically**: Detects requirements → Installs missing tools → Configures environment
+4. **Follow the setup instructions!**
 
 #### **For Existing Projects:**
 1. **Open Composer Chat** (Cmd/Ctrl + I)
@@ -193,6 +202,16 @@ Phase 0: Project Initialization
 ├── @project-manager
 ├── @researcher
 └── @quality-gates
+
+Phase 1: Architecture
+├── @architect
+└── @quality-gates
+
+Phase 2: Development
+├── @environment-setup (NEW!)
+├── @backend-developer
+├── @frontend-developer
+└── @quality-gates
 ```
 
 #### **PRD-First Project Workflow:**
@@ -204,6 +223,27 @@ Phase 0: Project Initialization
 ├── @project-manager
 ├── @researcher
 └── @quality-gates
+
+Phase 1: Architecture
+├── @architect
+└── @quality-gates
+
+Phase 2: Development
+├── @environment-setup (NEW!)
+├── @backend-developer
+├── @frontend-developer
+└── @quality-gates
+```
+
+#### **Environment Setup Workflow:**
+```
+@environment-setup "Set up React Native development environment"
+├── Detect project type (React Native)
+├── Check required tools (Node.js, Android Studio, Xcode)
+├── Install missing tools
+├── Configure environment variables
+├── Test development environment
+└── Create setup scripts for team
 ```
 
 Phase 2: Architecture
@@ -231,6 +271,62 @@ Phase 6: Analysis & Completion
 └── @workflow-analytics
 
 Error Recovery: @error-recovery (when needed)
+```
+
+## 🔧 Environment Setup Support
+
+### **Comprehensive Development Environment Management**
+The system ensures all development environments are properly configured before coding begins:
+
+#### **@environment-setup**
+- **Multi-Platform Support**: Windows, macOS, Linux compatibility
+- **Project Type Detection**: Automatically detects required tools based on project type
+- **Tool Validation**: Checks installation status and version compatibility
+- **Setup Scripts**: Creates platform-specific setup scripts for teams
+- **Troubleshooting**: Diagnoses and fixes common environment issues
+
+#### **Supported Development Types**
+- **Mobile Development**: React Native, Flutter, Ionic, Native iOS/Android
+- **Web Development**: Frontend, Backend, Full-stack, Static sites
+- **Desktop Development**: Electron, Tauri, Native applications
+- **Database Development**: SQL, NoSQL, Cloud databases
+
+#### **Environment Validation Process**
+1. **Project Analysis**: Determine required tools and dependencies
+2. **Tool Detection**: Check what's already installed
+3. **Version Validation**: Ensure compatible versions
+4. **Missing Tool Installation**: Provide installation commands
+5. **Configuration Setup**: Set environment variables and paths
+6. **Testing**: Verify environment works correctly
+7. **Documentation**: Create setup guides and scripts
+
+### **Usage Scenarios**
+
+#### **Scenario 1: New Project Environment Setup**
+```
+@orchestrator "Build a React Native e-commerce app"
+→ @environment-setup validates mobile development environment
+→ Installs missing tools (Android Studio, Xcode, etc.)
+→ Configures environment variables
+→ Proceeds with development
+```
+
+#### **Scenario 2: Environment Troubleshooting**
+```
+@environment-setup "My React Native build is failing, check environment"
+→ Diagnoses environment issues
+→ Provides specific solutions
+→ Fixes configuration problems
+→ Validates working environment
+```
+
+#### **Scenario 3: Team Environment Standardization**
+```
+@environment-setup "Create environment setup for our development team"
+→ Creates standardized setup scripts
+→ Documents all requirements
+→ Provides validation commands
+→ Ensures team consistency
 ```
 
 ## 📄 PRD Import Support
@@ -286,6 +382,79 @@ The system now supports importing and analyzing existing PRDs in multiple format
 → Comprehensive PRD analysis
 → Quality scoring and gap identification
 → Improvement recommendations
+```
+
+## 🎯 Complete Usage Scenarios
+
+### **All Supported Scenarios**
+
+#### **Scenario 1: New Project Development**
+```
+@orchestrator "Build a React Native e-commerce app with Laravel backend"
+→ @prd-writer (Product Requirements)
+→ @project-manager (Task Breakdown)
+→ @researcher (Technology Research)
+→ @architect (System Architecture)
+→ @environment-setup (Environment Validation)
+→ @backend-developer (Laravel API)
+→ @frontend-developer (React Native App)
+→ @copywriter (SEO Content) [if needed]
+→ @legal (Legal Compliance) [if needed]
+→ @code-refactorer (Code Optimization)
+→ @security-auditor (Security Audit)
+→ @qa-test (Testing Suite)
+→ @devops (Deployment Setup)
+→ @documentation (Documentation)
+```
+
+#### **Scenario 2: PRD-First Development**
+```
+@orchestrator "I have a PRD in Word format for my e-commerce app, start development"
+→ @prd-importer (Import & Analyze PRD)
+→ @project-manager (Task Breakdown)
+→ @researcher (Technology Research)
+→ @architect (System Architecture)
+→ @environment-setup (Environment Validation)
+→ @backend-developer (Laravel API)
+→ @frontend-developer (React Native App)
+→ Continue with normal workflow...
+```
+
+#### **Scenario 3: Environment Setup & Troubleshooting**
+```
+@environment-setup "Set up environment for React Native development"
+→ Detect project type (React Native)
+→ Check required tools (Node.js, Android Studio, Xcode)
+→ Install missing tools
+→ Configure environment variables
+→ Test development environment
+→ Create setup scripts for team
+```
+
+#### **Scenario 4: Existing Project Enhancement**
+```
+@project-analyzer "Analyze my existing e-commerce site"
+→ @copywriter-standalone "Improve SEO content"
+→ @legal-standalone "Add GDPR compliance"
+→ @code-refactorer "Optimize performance"
+```
+
+#### **Scenario 5: Content & Legal Integration**
+```
+@orchestrator "Build a marketing website with legal compliance"
+→ Smart detection includes @copywriter and @legal
+→ @copywriter (SEO Content)
+→ @legal (Legal Compliance)
+→ Continue with normal workflow...
+```
+
+#### **Scenario 6: Team Environment Standardization**
+```
+@environment-setup "Create environment setup for our development team"
+→ Create standardized setup scripts
+→ Document all requirements
+→ Provide validation commands
+→ Ensure team consistency
 ```
 
 ## 🔄 Existing Project Support
@@ -354,7 +523,7 @@ The system now includes powerful tools for working with existing projects:
 ```
 cursor-ai-dev-agents/
 ├── .cursor/
-│   ├── agents.json              # Main agent registry (23 agents)
+│   ├── agents.json              # Main agent registry (24 agents)
 │   └── agents/                  # Individual agent configurations
 │       ├── orchestrator.json    # Master coordinator
 │       ├── workflow-monitor.json # Progress tracking
@@ -367,6 +536,7 @@ cursor-ai-dev-agents/
 │       ├── project-manager.json # Task management
 │       ├── researcher.json      # Technology research
 │       ├── architect.json       # System design
+│       ├── environment-setup.json # Environment validation & setup
 │       ├── backend-developer.json # Backend development
 │       ├── frontend-developer.json # Frontend development
 │       ├── code-refactorer.json # Code optimization
