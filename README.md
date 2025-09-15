@@ -1,10 +1,10 @@
 # Cursor AI Development Agents
 
-**Enterprise-grade AI development workflow orchestration with 17 specialized agents for complete software development lifecycle management.**
+**Enterprise-grade AI development workflow orchestration with 22 specialized agents for complete software development lifecycle management, supporting both new and existing projects.**
 
 ## 🚀 What This Is
 
-A comprehensive collection of 17 specialized AI agents that work together in Cursor IDE to build complete software projects from idea to deployment. Each agent has been optimized for maximum efficiency with 80% shorter prompts while maintaining full functionality. They coordinate through intelligent workflow guidance to deliver production-ready applications with enterprise-grade quality assurance.
+A comprehensive collection of 22 specialized AI agents that work together in Cursor IDE to build complete software projects from idea to deployment, and enhance existing projects with targeted improvements. Each agent has been optimized for maximum efficiency with 80% shorter prompts while maintaining full functionality. They coordinate through intelligent workflow guidance to deliver production-ready applications with enterprise-grade quality assurance.
 
 ## 🎯 Key Features
 
@@ -15,6 +15,8 @@ A comprehensive collection of 17 specialized AI agents that work together in Cur
 - **Template System**: Pre-configured workflows for common project types
 - **Error Recovery**: Intelligent error handling and recovery strategies
 - **Quality Gates**: Phase validation after each major milestone
+- **Smart Agent Detection**: Automatically determines which agents are needed based on project requirements
+- **Existing Project Support**: Enhanced agents that work with existing codebases and provide incremental improvements
 
 ### **Enterprise-Grade Quality Assurance**
 - **Comprehensive Quality Gates**: 6-phase validation with detailed criteria
@@ -33,7 +35,7 @@ A comprehensive collection of 17 specialized AI agents that work together in Cur
 
 ## 🤖 Available Agents
 
-### **Core Workflow Agents**
+### **Core Workflow Agents (6)**
 - **@orchestrator** - Master coordinator with intelligent workflow guidance
 - **@workflow-monitor** - Real-time progress tracking and analytics
 - **@workflow-templates** - Pre-configured workflow templates and optimization
@@ -41,7 +43,7 @@ A comprehensive collection of 17 specialized AI agents that work together in Cur
 - **@workflow-analytics** - Advanced analytics and reporting
 - **@error-recovery** - Intelligent error handling and recovery
 
-### **Development Lifecycle Agents**
+### **Development Lifecycle Agents (11)**
 - **@prd-writer** - Product Requirements Document creation
 - **@project-manager** - Task breakdown and resource allocation
 - **@researcher** - Technology research and best practices
@@ -53,6 +55,15 @@ A comprehensive collection of 17 specialized AI agents that work together in Cur
 - **@qa-test** - Comprehensive testing suite creation
 - **@devops** - Infrastructure and deployment configuration
 - **@documentation** - Technical and user documentation
+
+### **Content & Legal Agents (2)**
+- **@copywriter** - SEO-optimized content creation and marketing copy
+- **@legal** - Legal compliance and risk mitigation (GDPR, CCPA, etc.)
+
+### **Existing Project Support Agents (3)**
+- **@project-analyzer** - Comprehensive project assessment and improvement recommendations
+- **@copywriter-standalone** - Content optimization for existing projects
+- **@legal-standalone** - Legal compliance enhancement for existing projects
 
 ## 🛠️ Technology Support
 
@@ -132,9 +143,17 @@ A comprehensive collection of 17 specialized AI agents that work together in Cur
    ```
 
 ### **Basic Usage**
+
+#### **For New Projects:**
 1. **Open Composer Chat** (Cmd/Ctrl + I)
 2. **Type**: `@orchestrator Build a social media app with React Native and Node.js`
 3. **Follow the sequential workflow guidance!**
+
+#### **For Existing Projects:**
+1. **Open Composer Chat** (Cmd/Ctrl + I)
+2. **Analyze your project**: `@project-analyzer Analyze my existing e-commerce site`
+3. **Get specific improvements**: `@copywriter-standalone Improve my content` or `@legal-standalone Add GDPR compliance`
+4. **Follow targeted recommendations!**
 
 ### **How It Works**
 1. **@orchestrator** creates a project folder (e.g., 'social-media-app')
@@ -192,13 +211,73 @@ Phase 6: Analysis & Completion
 Error Recovery: @error-recovery (when needed)
 ```
 
+## 🔄 Existing Project Support
+
+### **Project Analysis & Assessment**
+The system now includes powerful tools for working with existing projects:
+
+#### **@project-analyzer**
+- **Comprehensive Assessment**: Analyzes project structure, code quality, documentation, content, and legal compliance
+- **Health Scoring**: Provides overall project health score and maturity level
+- **Gap Analysis**: Identifies missing components and improvement opportunities
+- **Agent Recommendations**: Suggests which agents to use for specific improvements
+- **Roadmap Creation**: Generates detailed improvement roadmap with priorities
+
+#### **Standalone Agents for Existing Projects**
+- **@copywriter-standalone**: Content optimization and SEO improvements
+- **@legal-standalone**: Legal compliance enhancement and risk mitigation
+- **Enhanced Workflow Agents**: @copywriter and @legal now have "existing project mode"
+
+### **Usage Scenarios**
+
+#### **Scenario 1: Project Health Check**
+```
+@project-analyzer "Analyze my existing e-commerce site"
+→ Get comprehensive project assessment
+→ Receive specific improvement recommendations
+→ Follow targeted action plan
+```
+
+#### **Scenario 2: Content Enhancement**
+```
+@copywriter-standalone "Improve SEO content for my existing website"
+→ Analyze existing content
+→ Provide specific improvements
+→ Show before/after comparisons
+```
+
+#### **Scenario 3: Legal Compliance**
+```
+@legal-standalone "Add GDPR compliance to my existing app"
+→ Audit current legal status
+→ Identify compliance gaps
+→ Create targeted legal documents
+```
+
+#### **Scenario 4: Full Enhancement Workflow**
+```
+@orchestrator "Enhance my existing project with content and legal compliance"
+→ Smart detection determines needed agents
+→ Conditional workflow execution
+→ Incremental improvements
+```
+
+### **Key Benefits for Existing Projects**
+- **Incremental Improvements**: Enhance existing projects without disruption
+- **Preservation**: Keep existing good content and code
+- **Targeted Solutions**: Focus on specific areas that need improvement
+- **Before/After Analysis**: See exactly what changes are being made
+- **Risk Mitigation**: Identify and address compliance and security issues
+- **SEO Optimization**: Improve search rankings and user engagement
+- **Legal Compliance**: Ensure GDPR, CCPA, and other regulatory compliance
+
 ## 📁 Project Structure
 
 ### **Orchestrator Repository**
 ```
 cursor-ai-dev-agents/
 ├── .cursor/
-│   ├── agents.json              # Main agent registry
+│   ├── agents.json              # Main agent registry (22 agents)
 │   └── agents/                  # Individual agent configurations
 │       ├── orchestrator.json    # Master coordinator
 │       ├── workflow-monitor.json # Progress tracking
@@ -216,7 +295,12 @@ cursor-ai-dev-agents/
 │       ├── security-auditor.json # Security review
 │       ├── qa-test.json         # Testing
 │       ├── devops.json          # Deployment
-│       └── documentation.json   # Documentation
+│       ├── documentation.json   # Documentation
+│       ├── copywriter.json      # Content creation & SEO
+│       ├── legal.json           # Legal compliance
+│       ├── project-analyzer.json # Project assessment
+│       ├── copywriter-standalone.json # Content optimization
+│       └── legal-standalone.json # Legal enhancement
 ├── README.md
 └── .gitignore
 ```
@@ -233,6 +317,14 @@ Each new project gets its own isolated folder:
 ├── src/                         # Source code
 │   ├── backend/                 # Backend implementation
 │   └── frontend/                # Frontend implementation
+├── content/                     # Marketing content (if needed)
+│   ├── landing-page.md          # Landing page copy
+│   ├── blog-posts.md            # Blog content
+│   └── social-media.md          # Social media content
+├── legal/                       # Legal documents (if needed)
+│   ├── privacy-policy.md        # Privacy policy
+│   ├── terms-of-service.md      # Terms of service
+│   └── cookie-policy.md         # Cookie policy
 ├── tests/                       # Test suites
 ├── reports/                     # Quality reports
 │   ├── QA.md                    # Test results
